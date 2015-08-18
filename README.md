@@ -1,9 +1,6 @@
 # Week-8-Day-2
 Consuming APIs
 
-Day 36 - Consuming APIs
-=============
-
 Nuget Packages
 ----
 [RestSharp](www.restsharp.org)
