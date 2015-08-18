@@ -1,0 +1,28 @@
+﻿@using Humanizer
+@model List<Week8Day2.Models.Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="@item.MainImage.url_170x135" />
+            </div>
+            <div class="col-xs-4">
+                @Html.DisplayFor(modelItem => item.title)
+            </div>
+            <div class="col-xs-2">
+                @Html.DisplayFor(modelItem => item.prettyPrice)
+            </div>
+            <div class = "text-info col-xs-2" >
+                <a href = "@item.url" >@item.url</a>
+            </div>
+        </div>
+    }
+</div>
